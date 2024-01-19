@@ -163,7 +163,7 @@ form {
   .conteudo h3, a, p {
     margin: 0;
     font-size: 95%;
-    width: 95%;
+    width: 53%;
   }
   
   .title {
@@ -220,7 +220,7 @@ form {
   }
 
   .descricao {
-    padding-left: 14%;
+    padding-left: 8%;
     width: 171%;
   }
 
