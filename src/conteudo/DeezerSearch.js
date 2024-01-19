@@ -66,7 +66,6 @@ const DeezerSearch = () => {
         </div>
       </div>
 
-      {/* <h2>Resultados da Pesquisa:</h2> */}
       <div className="grid-container">
         {loading ? (
           <p>Carregando...</p>
@@ -74,25 +73,31 @@ const DeezerSearch = () => {
           data.map((item) => (
             <div className="conteudo" key={item.id}>
               <a href={item.link} className="imagemOuvir" target="_blank">
-              <img
-                id="picture"
-                className="imagem"
-                src={item.album.cover_medium}
-                alt={item.title}
-              />
+                <img
+                  id="picture"
+                  className="imagem"
+                  src={item.album.cover_medium}
+                  alt={item.title}
+                />
               </a>
-              <div className="descricao">
-                <h3 className="title" id="title">
-                  {item.title} | {Math.floor(item.duration / 60)}:
-                  {(item.duration % 60).toString().padStart(2, "0")}
-                </h3>
-                <h3 id="name">{item.artist.name}</h3>
-                <h3>
-                  <a href={item.preview}>Prévia</a> <br />
-                  <a href={item.link} target="_blank">Ouvir</a>
-                </h3>
-
-                <h3>{item.tracklist}</h3>
+              <div className="conteudo-descricao">
+                <audio controls className="audio">
+                  <source src={item.preview} type="audio/mp3" />
+                  Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <div className="descricao">
+                  <h3 className="title" id="title">
+                    {item.title} | {Math.floor(item.duration / 60)}:
+                    {(item.duration % 60).toString().padStart(2, "0")}
+                  </h3>
+                  <h3 id="name">{item.artist.name}</h3>
+                  <h3>
+                    <a href={item.link} target="_blank">
+                      Ouvir no Deezer
+                    </a>
+                  </h3>
+                  <h3>{item.tracklist}</h3>
+                </div>
               </div>
             </div>
           ))

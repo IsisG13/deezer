@@ -39,11 +39,12 @@
 .conteudo h3, a, p {
   margin: 0;
   font-size: 95%;
-  width: 189%;
+  width: 99%;
 }
 
 .title {
-  padding-bottom: 4%;
+  padding-bottom: 1%;
+  padding-top: 12px;
 }
 
 .cabecalho {
@@ -93,8 +94,29 @@
   -webkit-border-bottom-left-radius: 5px;
 }
 
+.audio {
+  width: 290px;
+  height: 27px;
+  padding-top: 0%;
+  padding-left: 296%;
+  margin-left: -287%;
+}
+
 .pesquisa {
   width: 100%;
+}
+
+.descricao {
+  padding-left: 12%;
+  width: 166%;
+}
+
+audio::-webkit-media-controls {
+  background-color: #F1F3F4;
+}
+
+audio::-webkit-media-controls-panel {
+  color: black;
 }
 
 form {
@@ -126,7 +148,7 @@ form {
     cursor: pointer;
     border-radius: 15px;
     border: 1px solid #bfbcbc;
-    width: 189%;
+    width: 190%;
     height: 180px;
   }
   
@@ -141,7 +163,7 @@ form {
   .conteudo h3, a, p {
     margin: 0;
     font-size: 95%;
-    width: 189%;
+    width: 95%;
   }
   
   .title {
@@ -196,6 +218,27 @@ form {
   .pesquisa {
     width: 100%;
   }
+
+  .descricao {
+    padding-left: 14%;
+    width: 171%;
+  }
+
+  .audio {
+    width: 273px;
+    height: 27px;
+    padding-top: 1%;
+    padding-left: 292%;
+    margin-left: -287%;
+  }
+
+  audio::-webkit-media-controls {
+    background-color: #F1F3F4;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    color: black;
+  }
   
   form {
     display: flex;
@@ -228,8 +271,8 @@ form {
     cursor: pointer;
     border-radius: 15px;
     border: 1px solid #bfbcbc;
-    width: auto;
-    height: 116px;
+    width: 116px;
+    height: 130px;
   }
   
   .conteudo {
@@ -242,17 +285,19 @@ form {
   
   .conteudo h3, a, p {
     margin: 0;
-    font-size: 95%;
-    width: 330%;
+    font-size: 87%;
+    width: 57%;
   }
 
   .descricao {
-    margin-top: 6%;
+    margin-top: 4%;
     margin-left: 4%;
+    padding-left: 0%;
+    width: 98%;
   }
   
   .title {
-    padding-bottom: 4%;
+    padding-bottom: 0%;
   }
   
   .cabecalho {
@@ -298,6 +343,23 @@ form {
   .input::placeholder {
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
+  }
+
+  .audio {
+    width: 213px;
+    height: 27px;
+    padding-top: 4%;
+    padding-left: 0%;
+    margin-right: -225%;
+    margin-left: 2%;
+  }
+
+  audio::-webkit-media-controls {
+    background-color: #F1F3F4;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    color: black;
   }
   
   .pesquisa {
