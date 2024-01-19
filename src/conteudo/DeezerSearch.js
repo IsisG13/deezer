@@ -73,13 +73,15 @@ const DeezerSearch = () => {
         ) : data.length > 0 ? (
           data.map((item) => (
             <div className="conteudo" key={item.id}>
+              <a href={item.link} className="imagemOuvir" target="_blank">
               <img
                 id="picture"
                 className="imagem"
                 src={item.album.cover_medium}
                 alt={item.title}
               />
-              <div>
+              </a>
+              <div className="descricao">
                 <h3 className="title" id="title">
                   {item.title} | {Math.floor(item.duration / 60)}:
                   {(item.duration % 60).toString().padStart(2, "0")}
@@ -87,7 +89,7 @@ const DeezerSearch = () => {
                 <h3 id="name">{item.artist.name}</h3>
                 <h3>
                   <a href={item.preview}>Prévia</a> <br />
-                  <a href={item.link}>Ouvir</a>
+                  <a href={item.link} target="_blank">Ouvir</a>
                 </h3>
 
                 <h3>{item.tracklist}</h3>
