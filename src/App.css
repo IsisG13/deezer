@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  flex-direction: column;
   margin-left: 2%;
 }
 
@@ -6,22 +8,91 @@
   text-decoration: none;color: black;
 }
 
+.grid-container {
+  margin-top: 2%;
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 20px;
+}
+
+.imagem {
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #bfbcbc;
+  width: 189%;
+  height: 180px;
+}
+
 .conteudo {
+  width: 53%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 82%;
-  margin-bottom: 8%;
-  margin-top: -12%;
-  margin-left: 16%;
+  margin: 0;
 }
 
 .conteudo h3, a, p {
   margin: 0;
   font-size: 95%;
+  width: 189%;
 }
 
-.imagem {
-  width: 15%;
-  height: 107px;
+.title {
+  padding-bottom: 4%;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  background-color: #ececec;
+  font-size: 81%;
+  align-items: center;
+}
+
+.cabecalho h1 {
+  text-align: center;
+  font-size: 301%;
+}
+
+.button {
+  cursor: pointer;
+  width: 7%;
+  background-color: white;
+  border: 1px solid #b3b1b1;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+
+}
+
+.button:hover {
+  width: 7%;
+  background-color: #b3b1b1;
+  font-weight: bold;
+}
+
+.input {
+  cursor: pointer;
+  height: 44px;
+  width: 23%;
+  border: 1px solid #b3b1b1;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  /* border-radius: 7px; */
+}
+
+.input::placeholder {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+
+.pesquisa {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  justify-content: center;
 }
